@@ -1,0 +1,65 @@
+body{
+    max-width: 600;
+    background-color: blanchedalmond;
+}
+#header{
+    background: url(brenda.jpg) no-repeat center;
+    padding: 60px 70px;
+    text-align: center; 
+}
+#cv-aboutme{
+    text-align: center;
+}
+#aboutme-heading{
+  padding: 40px 0 10px;  
+}
+#about-me{
+    padding: 10px 0;
+}
+#cv-button{
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: white;
+    background-color: grey;
+    box-shadow: 5px 5px  15px grey;
+    text-size-adjust: 16pt;
+    padding: 10px 20px;
+    transition: all 200ms ease-in-out;
+}
+#cv-button:hover{
+    color: grey;
+    background-color: white;
+}
+hr{
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+}
+#portfolio{
+    text-align: center;
+}
+#my-work{
+    padding: 10px 0 20px;
+}
+#all, #videos, #images{
+    text-decoration: none;
+    transition: all 150ms ease-in-out ;
+}
+#all:hover, #videos:hover, #images:hover{
+    text-decoration: underline;
+}
+#footer{
+    margin: 20px 10px;
+    text-align: center;
+}
+#contacts{
+    padding: 15px 0;
+    
+}
+#linked-in, #instagram {
+    text-decoration: none;
+    padding: 0 10px;
+}
+#linked-in:hover, #instagram:hover {
+    color: blueviolet;
+}
