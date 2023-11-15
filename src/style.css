@@ -1,65 +1,136 @@
-body{
-    max-width: 600;
-    background-color: blanchedalmond;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #f7f7fade, #f0f0f0);
 }
-#header{
-    background: url(brenda.jpg) no-repeat center;
-    padding: 60px 70px;
-    text-align: center; 
+.website {
+  width: 75%;
+  min-width: 360px;
+  margin: 4em auto;
+  font-family: "Nunito", sans-serif;
+
+  box-shadow: 0 10px 20px #e7e7e9;
 }
-#cv-aboutme{
-    text-align: center;
+section.header {
+  background-color: #efeff3dc;
+  padding: 2em 5em 3em;
+  text-align: center;
 }
-#aboutme-heading{
-  padding: 40px 0 10px;  
+div.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
-#about-me{
-    padding: 10px 0;
+#home,
+#portfolio,
+#contact {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.8em;
+  padding: 1em 0.8em 0;
+  transition: all 200ms ease-in-out;
 }
-#cv-button{
-    border: 1px solid grey;
-    border-radius: 10px;
-    color: white;
-    background-color: grey;
-    box-shadow: 5px 5px  15px grey;
-    text-size-adjust: 16pt;
-    padding: 10px 20px;
-    transition: all 200ms ease-in-out;
+#home:hover,
+#portfolio:hover,
+#contact:hover {
+  font-size: 0.9em;
 }
-#cv-button:hover{
-    color: grey;
-    background-color: white;
+div.intro {
+  line-height: 2em;
+  padding-top: 2em;
 }
-hr{
-    display: block;
-    margin: 20px auto;
-    width: 90%;
+#name {
+  font-size: 1.4em;
+  padding-bottom: 0.4em;
 }
-#portfolio{
-    text-align: center;
+#introduction {
+  font-size: 0.8em;
 }
-#my-work{
-    padding: 10px 0 20px;
+div.about-img {
+  background-color: #ffffff;
+  padding: 3em 1em;
 }
-#all, #videos, #images{
-    text-decoration: none;
-    transition: all 150ms ease-in-out ;
+.about,
+.me {
+  display: inline;
+  justify-content: space-evenly;
+  padding: 0 2em;
+  margin: 0.5em;
 }
-#all:hover, #videos:hover, #images:hover{
-    text-decoration: underline;
+img {
+  width: 300px;
 }
-#footer{
-    margin: 20px 10px;
-    text-align: center;
+#about-me {
+  line-height: 1.8em;
 }
-#contacts{
-    padding: 15px 0;
-    
+#cv-button {
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(180, 180, 180);
+  margin: 0.8em 0.5em;
+  font-size: 0.8em;
+  padding: 0.6em 0.7em;
+  transition: all 200ms ease-in-out;
 }
-#linked-in, #instagram {
-    text-decoration: none;
-    padding: 0 10px;
+#cv-button:hover {
+  color: rgb(180, 180, 180);
+  background-color: white;
 }
-#linked-in:hover, #instagram:hover {
-    color: blueviolet;
+
+#footer {
+  padding: 20px 10px 60px;
+  text-align: center;
+}
+div.contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.email-address,
+.phone-number,
+.social-media {
+  flex-grow: 1;
+  padding: 0 2em;
+  margin: 1em;
+}
+.social-media {
+  padding: 0 5em;
+}
+p.email,
+p.phone {
+  font-size: 0.8em;
+}
+#linked-in,
+#instagram {
+  text-decoration: none;
+  padding: 0 10px;
+}
+#linked-in:hover,
+#instagram:hover {
+  color: blueviolet;
+}
+div.portfolio {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.myWork {
+  background-color: #808080;
+}
+#my-work-heading {
+  text-align: center;
+  padding: 10px 0 20px;
+}
+#all,
+#videos,
+#images {
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+#all:hover,
+#videos:hover,
+#images:hover {
+  text-decoration: underline;
 }

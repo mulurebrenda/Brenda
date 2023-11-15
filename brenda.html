@@ -4,83 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brenda Mulure</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/style.css" />
-    <script src="https://kit.fontawesome.com/49f250ac70.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/49f250ac70.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
-      <section id="header">
-        <h2 id="name">Hi there! My name is Brenda Mulure.</h2>
-        <p id="intro">
-          Welcome to my website!
-          <br />
-          I'm a BSc. Electrical and Electronic Engineering student.
-        </p>
-      </section>
-
-      <div id="cv-aboutme">
-        <h3 id="aboutme-heading">About me</h3>
-        <p id="about-me">
-          I am an undergraduate student studying Bachelor of Science (Electrical
-          and Electronic Engineering) at Dedan Kimathi University of Technology
-          in Nyeri,Kenya.
-        </p>
-        <button id="cv-button">
-            Download CV</button>
-      </div>
-      <hr>
-      <div id="portfolio">
-        <h3 id="my-work">My Work</h3>
-        <div class="row">
-          <div class="col-4" >
-            <a id="all" href="#">ALL</a>
+      <div class="website">
+        <section class="header">
+          <div class="nav-bar">
+            <div class="home">
+              <a id="home" href="brenda.html">Home</a>
+            </div>
+            <div class="portolio">
+              <a id="portfolio" href="mywork.html" target="_blank">
+                Portfolio</a
+              >
+            </div>
+            <div class="contact">
+              <a id="contact" href="mywork/contact.html">Contact</a>
+            </div>
           </div>
-          <div class="col-4" >
-            <a id="videos" href="#">VIDEOS</a>
+          <div class="intro">
+            <h2 id="name">Hi there! My name is Brenda Mulure.</h2>
+            <p id="introduction">
+              Welcome to my website!
+              <br />
+              I'm a BSc. Electrical and Electronic Engineering student.
+            </p>
           </div>
-          <div class="col-4" >
-            <a id="images" href="#">IMAGES</a>
+        </section>
+        <div class="about-img">
+          <div class="about">
+            <h3 id="aboutme-heading">About me</h3>
+            <p id="about-me">
+              I am an undergraduate student studying Bachelor of Science
+              (Electrical and Electronic Engineering) at Dedan Kimathi
+              University of Technology in Nyeri,Kenya.
+            </p>
+            <button id="cv-button">Download CV</button>
+          </div>
+          <div class="me">
+            <img src="images/brenda.jpg" alt="Me" />
           </div>
         </div>
+
+        <footer id="footer">
+          <h4 id="contacts">Contacts</h4>
+          <div class="contacts">
+            <div class="email-address">
+              <span class="icon"> </span>
+              <strong>E-mail</strong>
+              <br />
+              <p class="email">mulure.brenda20@students.ac.ke</p>
+            </div>
+            <div class="phone-number">
+              <span class="icon">
+                <i class="fa-regular fa-phone"></i>
+              </span>
+              <strong>Telephone number</strong>
+              <br />
+              <p class="phone">+254758483182</p>
+            </div>
+            <div class="social-media">
+              <span class="icon"> </span>
+              <strong> Socials</strong>
+              <br />
+              <span>
+                <a id="linked-in" href="">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a id="instagram" href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </footer>
       </div>
-      <footer id="footer">
-        <h4 id="contacts">Contacts</h4>
-        <div class="row">
-            <div class="col-4">
-                <span class="icon">
-
-                </span>
-                <strong>E-mail</strong> 
-                <br>
-                mulure.brenda20@students.ac.ke
-            </div>
-            <div class="col-4">
-                <span class="icon">
-                    <i class="fa-regular fa-phone"></i>
-                </span>
-                <strong>Telephone number</strong> 
-                <br>
-                +254758483182
-            </div>
-            <div class="col-4">
-                <span class="icon">
-
-                </span>
-                <strong>
-                    Socials</strong> 
-                <br>
-                <span >
-                    <a id="linked-in" href="">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a id="instagram" href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </span>
-            </div>
-        </div>
-      </footer>
     </div>
   </body>
 </html>
