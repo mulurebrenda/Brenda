@@ -13,31 +13,44 @@
 
   box-shadow: 0 10px 20px #e7e7e9;
 }
+header {
+  background-color: #efeff3dc;
+  padding: 2em 5em 0;
+}
+ul{
+  list-style: none;
+   margin-bottom: 0;
+  padding-left: 0;
+}
+li{
+  display: inline-block;
+  
+}
+div.nav-bar {
+  text-align: end;
+ 
+}
+#about-section,
+#portfolio,
+#contacts-section {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.7em;
+  padding: 1em 0.5em 0;
+  transition: all 200ms ease-in-out;
+}
+#about-section:hover,
+#portfolio:hover,
+#contacts-section:hover {
+  font-size: 0.75em;
+}
 section.header {
   background-color: #efeff3dc;
   padding: 2em 5em 3em;
   text-align: center;
 }
-div.nav-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
-}
-#home,
-#portfolio,
-#contact {
-  text-decoration: none;
-  color: #000000;
-  font-size: 0.8em;
-  padding: 1em 0.8em 0;
-  transition: all 200ms ease-in-out;
-}
-#home:hover,
-#portfolio:hover,
-#contact:hover {
-  font-size: 0.9em;
-}
-div.intro {
+
+#intro {
   line-height: 2em;
   padding-top: 2em;
 }

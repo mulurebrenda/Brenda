@@ -19,21 +19,23 @@
   <body>
     <div class="container">
       <div class="website">
-        <section class="header">
+        <header>
           <div class="nav-bar">
-            <div class="home">
-              <a id="home" href="brenda.html">Home</a>
-            </div>
-            <div class="portolio">
-              <a id="portfolio" href="mywork.html" target="_blank">
-                Portfolio</a
-              >
-            </div>
-            <div class="contact">
-              <a id="contact" href="mywork/contact.html">Contact</a>
-            </div>
+            <ul>
+              <li class="about-me">
+                <a id="about-section" href="#introduction">About</a>
+              </li>
+              <li class="portolio">
+                <a id="portfolio" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="contact">
+                <a id="contacts-section" href="#contacts">Contact</a>
+              </li>
+            </ul>
           </div>
-          <div class="intro">
+        </header>
+        <section class="header">
+          <div id="intro">
             <h2 id="name">Hi there! My name is Brenda Mulure.</h2>
             <p id="introduction">
               Welcome to my website!
@@ -61,14 +63,16 @@
           <h4 id="contacts">Contacts</h4>
           <div class="contacts">
             <div class="email-address">
-              <span class="icon"> </span>
+              <span class="icon">
+                <i class="fa-regular fa-envelope"></i>
+              </span>
               <strong>E-mail</strong>
               <br />
               <p class="email">mulure.brenda20@students.ac.ke</p>
             </div>
             <div class="phone-number">
               <span class="icon">
-                <i class="fa-regular fa-phone"></i>
+                <i class="fa-solid fa-phone"></i>
               </span>
               <strong>Telephone number</strong>
               <br />
