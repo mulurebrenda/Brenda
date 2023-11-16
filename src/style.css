@@ -62,13 +62,15 @@ section.header {
   font-size: 0.8em;
 }
 div.about-img {
+  display: flex;
+   flex-wrap: wrap;
   background-color: #ffffff;
   padding: 3em 1em;
 }
 .about,
-.me {
-  display: inline;
-  justify-content: space-evenly;
+.image {
+
+  flex: 1;
   padding: 0 2em;
   margin: 0.5em;
 }
@@ -111,9 +113,12 @@ div.contacts {
 .social-media {
   padding: 0 5em;
 }
-p.email,
+a.email,
 p.phone {
   font-size: 0.8em;
+}
+.email:hover{
+  color: blueviolet;
 }
 #linked-in,
 #instagram {
@@ -124,26 +129,4 @@ p.phone {
 #instagram:hover {
   color: blueviolet;
 }
-div.portfolio {
-  display: flex;
-  justify-content: space-evenly;
-}
 
-div.myWork {
-  background-color: #808080;
-}
-#my-work-heading {
-  text-align: center;
-  padding: 10px 0 20px;
-}
-#all,
-#videos,
-#images {
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-}
-#all:hover,
-#videos:hover,
-#images:hover {
-  text-decoration: underline;
-}
