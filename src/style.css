@@ -5,7 +5,8 @@
   justify-content: center;
   background-image: linear-gradient(to bottom, #f7f7fade, #f0f0f0);
 }
-.website {
+.website,
+.portfolio-page {
   width: 75%;
   min-width: 360px;
   margin: 4em auto;
@@ -17,19 +18,18 @@ header {
   background-color: #efeff3dc;
   padding: 2em 5em 0;
 }
-ul{
+ul {
   list-style: none;
-   margin-bottom: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
-li{
+li {
   display: inline-block;
-  
 }
 div.nav-bar {
   text-align: end;
- 
 }
+#home,
 #about-section,
 #portfolio,
 #contacts-section {
@@ -39,17 +39,20 @@ div.nav-bar {
   padding: 1em 0.5em 0;
   transition: all 200ms ease-in-out;
 }
+#home:hover,
 #about-section:hover,
 #portfolio:hover,
 #contacts-section:hover {
-  font-size: 0.75em;
+  font-size: 0.65em;
+}
+li.active {
+  color: brown;
 }
 section.header {
   background-color: #efeff3dc;
   padding: 2em 5em 3em;
   text-align: center;
 }
-
 #intro {
   line-height: 2em;
   padding-top: 2em;
@@ -63,13 +66,12 @@ section.header {
 }
 div.about-img {
   display: flex;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: #ffffff;
   padding: 3em 1em;
 }
 .about,
 .image {
-
   flex: 1;
   padding: 0 2em;
   margin: 0.5em;
@@ -94,7 +96,6 @@ img {
   color: rgb(180, 180, 180);
   background-color: white;
 }
-
 #footer {
   padding: 20px 10px 60px;
   text-align: center;
@@ -117,7 +118,7 @@ a.email,
 p.phone {
   font-size: 0.8em;
 }
-.email:hover{
+.email:hover {
   color: blueviolet;
 }
 #linked-in,
@@ -129,4 +130,35 @@ p.phone {
 #instagram:hover {
   color: blueviolet;
 }
-
+a.active {
+  font-size: 0.85em;
+  color: brown;
+}
+div.my-work-intro {
+  background-color: #efeff3dc;
+  padding: 1em;
+  text-align: center;
+}
+#my-work-heading {
+  padding-top: 2em;
+}
+a.essay,
+a.video,
+a.power-point,
+a.abstract {
+  border: 1px solid rgb(180, 180, 180);
+  color: white;
+  background-color: rgb(180, 180, 180);
+  font-size: 0.8em;
+  padding: 5px 10px 3px 10px;
+  transition: all 200ms ease-in-out;
+}
+a.essay:hover,
+a.video:hover,
+a.power-point:hover,
+a.abstract:hover {
+  color: rgb(180, 180, 180);
+  background-color: white;
+  font-size: 0.7em;
+  padding: 5px 13px 3px 13px;
+}
