@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+:root {
+  --button-color: #b7b7b7;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-image: linear-gradient(to bottom, #f7f7fade, #f0f0f0);
 }
-.website,
-.portfolio-page {
+div.website,
+div.portfolio-page {
   width: 75%;
   min-width: 360px;
   margin: 4em auto;
   font-family: "Nunito", sans-serif;
-
-  box-shadow: 0 10px 20px #e7e7e9;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px #aeaeaf9c;
 }
 header {
   background-color: #efeff3dc;
@@ -29,24 +32,26 @@ li {
 div.nav-bar {
   text-align: end;
 }
-#home,
-#about-section,
-#portfolio,
-#contacts-section {
+a.home-page,
+a.about-section,
+a.portfolio-page,
+a.contacts-section {
   text-decoration: none;
   color: #000000;
-  font-size: 0.7em;
+  font-size: 0.6em;
   padding: 1em 0.5em 0;
   transition: all 200ms ease-in-out;
 }
-#home:hover,
-#about-section:hover,
-#portfolio:hover,
-#contacts-section:hover {
-  font-size: 0.65em;
+a.home-page:hover,
+a.about-section:hover,
+a.portfolio-page:hover,
+a.contacts-section:hover {
+  font-size: 0.55em;
+  text-decoration: solid;
 }
-li.active {
+li a.active {
   color: brown;
+  font-size: 0.6em;
 }
 section.header {
   background-color: #efeff3dc;
@@ -61,7 +66,7 @@ section.header {
   font-size: 1.4em;
   padding-bottom: 0.4em;
 }
-#introduction {
+p.introduction {
   font-size: 0.8em;
 }
 div.about-img {
@@ -70,7 +75,7 @@ div.about-img {
   background-color: #ffffff;
   padding: 3em 1em;
 }
-.about,
+.about-paragraph,
 .image {
   flex: 1;
   padding: 0 2em;
@@ -79,21 +84,22 @@ div.about-img {
 img {
   width: 300px;
 }
-#about-me {
+p.about {
+  font-size: 14px;
   line-height: 1.8em;
 }
 #cv-button {
-  border: 1px solid rgb(180, 180, 180);
+  border: 1px solid var(--button-color);
   border-radius: 6px;
   color: white;
-  background-color: rgb(180, 180, 180);
+  background-color: var(--button-color);
   margin: 0.8em 0.5em;
   font-size: 0.8em;
   padding: 0.6em 0.7em;
   transition: all 200ms ease-in-out;
 }
 #cv-button:hover {
-  color: rgb(180, 180, 180);
+  color: var(--button-color);
   background-color: white;
 }
 #footer {
@@ -146,9 +152,9 @@ a.essay,
 a.video,
 a.power-point,
 a.abstract {
-  border: 1px solid rgb(180, 180, 180);
+  border: 1px solid var(--button-color);
   color: white;
-  background-color: rgb(180, 180, 180);
+  background-color: var(--button-color);
   font-size: 0.8em;
   padding: 5px 10px 3px 10px;
   transition: all 200ms ease-in-out;
@@ -157,7 +163,7 @@ a.essay:hover,
 a.video:hover,
 a.power-point:hover,
 a.abstract:hover {
-  color: rgb(180, 180, 180);
+  color: var(--button-color);
   background-color: white;
   font-size: 0.7em;
   padding: 5px 13px 3px 13px;
